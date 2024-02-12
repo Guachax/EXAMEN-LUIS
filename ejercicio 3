@@ -1,0 +1,9 @@
+def suma_digitos(numero):
+    suma = 0
+    while numero > 0:
+        suma = suma + (numero % 10)
+        numero = numero // 10
+    return suma
+
+numero = int(input("Escriba un número entero: "))
+print(f"La suma de los dígitos del número {numero} es {suma_digitos(numero)}")

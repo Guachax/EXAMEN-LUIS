@@ -1,0 +1,15 @@
+import random
+
+numero_aleatorio = random.randint(1, 100)
+numero_intento = None
+intentos = 0
+
+while numero_intento != numero_aleatorio:
+    intentos += 1
+    numero_intento = int(input("Adivina el número (entre 1 y 100): "))
+    if numero_intento < numero_aleatorio:
+        print("Intenta un número más alto.")
+    elif numero_intento > numero_aleatorio:
+        print("Intenta un número más bajo.")
+
+print("¡Felicidades! Adivinaste el número en", intentos, "intentos.")
